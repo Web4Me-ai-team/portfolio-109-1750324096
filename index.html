@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Yu Qian's Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/be6d9fdd26.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Arbutus Slab' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <nav class="menu-bar">
+            <div class="container">
+              <ul class="menu">
+                <li>
+                  <a href="#" onclick="showSection('profile')">Home</a>
+                </li>
+                <!--Sections dropdown -->
+                <li class="submenu">
+                  <a href="#">Portfolio</a>
+                  <ul class="dropdown">
+                    <li><a href="#" onclick="showSection('research')">Research</a></li>
+                    <li><a href="#" onclick="showSection('education')">Education</a></li>
+                    <li><a href="#" onclick="showSection('work')">Experience</a></li>
+                    <li><a href="#" onclick="showSection('projects')">Projects</a></li>
+                    <li><a href="#" onclick="showSection('publications')">Publications</a></li>
+                    <li><a href="#" onclick="showSection('skills')">Skills</a></li>
+                    <li><a href="#" onclick="showSection('teaching')">Teaching</a></li>
+                    <li><a href="#" onclick="showSection('awards')">Awards</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </nav>          
+    </header>
+
+    <main>
+        <section id="profile">
+            <div class="left-section">
+                <div class="profile-pic">
+                    <img src="profile/1.svg" alt="Yu Qian" style="width: 250px; height: auto; max-width: 100%; border-radius: 50%;">
+                </div>
+                <div class="contacts">
+                    <a href="https://www.linkedin.com/in/qian-yu-3254102a2/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+                    <a href="mailto:yuqian05@u.nus.edu" aria-label="Email"><i class="fa-solid fa-envelope fa-lg"></i></a>
+                    <a href="tel:+6586567061" aria-label="Phone"><i class="fa-solid fa-phone fa-lg"></i></a>
+                </div>
+            </div>
+            <div class="right-section">
+              <div class="intro-text">
+                <p>H<span id="typing-text"></span></p>
+                <h1>Yu Qian</h1>
+              </div>
+              <div class="profile-card">
+                <p class="summary">
+                    Yu Qian is a dedicated Computer Science student at the National University of Singapore with a strong focus on Artificial Intelligence and Parallel Computing. She has diverse experience in research, software engineering, and algorithm development, complemented by a solid academic record and multiple awards.
+                </p>
+              </div>
+            </div>
+        </section>
+
+        <section id="research" class="hidden">
+            <h2>Research Interests</h2>
+            <div id="research-interests-container" class="research-grid">
+                <div class="research-card">
+                    <h3 class="research-field">mlsys research</h3>
+                    <p class="research-description">Exploring unified memory and its applications.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="hidden">
+            <h2 class="section-title">Education</h2>
+            <div class="content-container" id="education-container">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">Present</div>
+                        <div class="timeline-content">
+                            <h3>BS in Computer Science</h3>
+                            <span class="school">National University of Singapore</span>
+                            <p class="field">Computer Science</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Upcoming: Sept 2025</div>
+                        <div class="timeline-content">
+                            <h3>Student Exchange Program</h3>
+                            <span class="school">University of Washington</span>
+                            <p class="field">Advanced coursework in computing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="hidden">
+            <h2>Work Experience</h2>
+            <div class="content-container" id="experience-container">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">Jan 2025 – Present</div>
+                        <div class="timeline-content">
+                            <h3 class="position">Undergraduate Research Assistant</h3>
+                            <span class="institution">National University of Singapore</span>
+                            <div class="description-container">
+                                <ul class="description-list">
+                                    <li>Supervised by Prof. Yao LU, exploring heterogeneous execution strategies (asymmetric pipelining, CPU- GPU offloading) for efficient large language model inference.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">May 2025</div>
+                        <div class="timeline-content">
+                            <h3 class="position">Explore HRT Program Participant</h3>
+                            <span class="institution">Hudson River Trading</span>
+                            <div class="description-container">
+                                <ul class="description-list">
+                                    <li>Selected as one of 15 participants for a two-day immersive program, attended technical talks and workshops on algorithm development and software engineering.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Dec 2024 – Jan 2025</div>
+                        <div class="timeline-content">
+                            <h3 class="position">Computer Vision Research Intern</h3>
+                            <span class="institution">Beijing Freedo Technology Co., Ltd.</span>
+                            <div class="description-container">
+                                <ul class="description-list">
+                                    <li>Developed algorithms for parameterized reconstruction of buildings using multi-view image analysis.</li>
+                                    <li>Adapted and fine-tuned advanced neural network-based contour extraction models for architectural applications.</li>
+                                </ul>
+                            </div>
+                            <div class="techniques">
+                                <span class="technique-tag">LCNN</span>
+                                <span class="technique-tag">multi-view image analysis</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">May 2024 – Aug 2024</div>
+                        <div class="timeline-content">
+                            <h3 class="position">Software Engineer Intern</h3>
+                            <span class="institution">Computing for Voluntary Welfare Organizations</span>
+                            <div class="description-container">
+                                <ul class="description-list">
+                                    <li>Developed and maintained case management system with React.js for frontend and Golang/Ruby on Rails for backend.</li>
+                                    <li>Contributed to porting and enhancing features for the Lions Befrienders Service Association.</li>
+                                </ul>
+                            </div>
+                            <div class="techniques">
+                                <span class="technique-tag">React.js</span>
+                                <span class="technique-tag">Golang</span>
+                                <span class="technique-tag">Ruby on Rails</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="hidden">
+            <h2>Technical Skills</h2>
+            <div id="technical-skills-container" class="skills-grid">
+                <div class="skill-item">
+                    <i class="fa-brands fa-python"></i>
+                    <span>Python</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-solid fa-code"></i>
+                    <span>C++</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-solid fa-code"></i>
+                    <span>C</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-solid fa-code"></i>
+                    <span>Java</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-solid fa-code"></i>
+                    <span>Ruby on Rails</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-solid fa-code"></i>
+                    <span>Golang</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-brands fa-react"></i>
+                    <span>React.js</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-solid fa-brain"></i>
+                    <span>Pytorch</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-solid fa-database"></i>
+                    <span>PostgresSQL</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-solid fa-cloud"></i>
+                    <span>Parallel Computing (OpenMP, CUDA, OpenMPI)</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="teaching" class="hidden">
+            <h2 class="section-title">Teaching Experience</h2>
+            <div class="content-container" id="teaching-container">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3 class="teaching-role">Undergraduate Teaching Assistant</h3>
+                            <span class="teaching-institution">National University of Singapore</span>
+                            <div class="courses-container">
+                                <h4>Courses:</h4>
+                                <ul>
+                                    <li>CS1101S (Programming Methodology)</li>
+                                    <li>CS2040S (Data Structures and Algorithms)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="awards" class="hidden">
+            <h2 class="section-title">Honors & Awards</h2>
+            <div class="content-container" id="awards-container">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">Aug 2024</div>
+                        <div class="timeline-content">
+                            <h3 class="award-name">GIC Computing for the Community Fellowship Award</h3>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Jan 2024</div>
+                        <div class="timeline-content">
+                            <h3 class="award-name">Dean’s List</h3>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Jun 2023</div>
+                        <div class="timeline-content">
+                            <h3 class="award-name">Soh Bing Scholarship</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <button class="theme-toggle" onclick="toggleTheme()"><i class="fa-solid fa-moon fa-lg"></i></button>
+
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            body.classList.toggle('dark');
+
+            const button = document.querySelector('.theme-toggle');
+            button.innerHTML = body.classList.contains('dark')
+                ? '<i class="fa-solid fa-sun fa-lg"></i>'
+                : '<i class="fa-solid fa-moon fa-lg"></i>';
+        }
+
+        function showSection(id) {
+            document.querySelectorAll('main section').forEach(s => s.classList.add('hidden'));
+            document.getElementById(id).classList.remove('hidden');
+        }
+
+        // Default section on page load
+        showSection('profile');
+        const text = "ello, I'm";
+        const typingText = document.getElementById('typing-text');
+        let index = 0;
+        let isDeleting = false;
+
+        function typeEffect() {
+            if (isDeleting) {
+                typingText.innerText = text.substring(0, index--);
+            } else {
+                typingText.innerText = text.substring(0, index++);
+            }
+            let speed = isDeleting ? 75 : 150;
+            if (!isDeleting && index === text.length + 1) {
+                speed = 1200; // Pause at full text before deleting
+                isDeleting = true;
+            } else if (isDeleting && index === 0) {
+                isDeleting = false;
+                speed = 500; // Pause before typing again
+            }
+            setTimeout(typeEffect, speed);
+        }
+        typeEffect();
+
+        document.querySelectorAll('.timeline-item').forEach(item => {
+            item.addEventListener('mouseenter', function () {
+                document.querySelectorAll('.timeline-item.active').forEach(activeItem => {
+                    if (activeItem !== this) {
+                        activeItem.classList.remove('active');
+                    }
+                });
+                this.classList.add('active');
+            });
+
+            item.addEventListener('click', function () {
+                document.querySelectorAll('.timeline-item').forEach(i => i.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+        // Project section
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.project-card');
+        const totalSlides = slides.length;
+
+        function updateCarousel() {
+            const container = document.querySelector('.projects-container');
+            container.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+
+        function nextSlide() {
+            if (currentSlide < totalSlides - 1) {
+            currentSlide++;
+            updateCarousel();
+            }
+        }
+
+        function prevSlide() {
+            if (currentSlide > 0) {
+            currentSlide--;
+            updateCarousel();
+            }
+        }
+        document.addEventListener('DOMContentLoaded', updateCarousel);
+    </script>
+</body>
+</html>
